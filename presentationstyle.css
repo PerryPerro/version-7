@@ -3,6 +3,11 @@ html, body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	background-image: url("b1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #header {
 	background-color: white;
@@ -12,6 +17,8 @@ html, body {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 9;
+	box-shadow: 0px 3px 2px lightgrey;
 }
 ul {
 	margin: 0;
@@ -27,11 +34,8 @@ li {
 	background-color: white;
 	padding: 10px 9px 11px 9px;
 }
-#column {
-}
 
-
-.erik, .andreas, .axel {
+.erik, #andreas, #axel {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -40,22 +44,23 @@ li {
 
 .erik {
 	background-image: url("b1.jpg");
-	height: 20%;
+	height: 140px;
 
 }
-.andreas {
-	background-image: url("bh.jpg");
-	height: 15%;
-
-}
-.axel {
+#andreas {
 	background-image: url("b1.jpg");
-	height: 10%;
+	height: 140px;
+
+}
+#axel {
+	background-image: url("b1.jpg");
+	height: 140px;
 }
 #erikPresentation, #andreasPresentation, #axelPresentation {
-	background-color: yellow;
-	height: 40%;
+	background-color: rgba(0, 0, 0, 0.74);
+	height: 500px;
 	width: 100%;
+	display: flex;
 }
 a  {
 	color: black;
@@ -64,4 +69,151 @@ a  {
 }
 li:hover {
 	background-color: lightgrey;
+}
+
+.namnRubrik {
+	position: absolute;
+    left: 42%;
+    margin-left: -90px;
+	margin-top: 50px;
+	font-size: 40px;
+	text-align: center;
+	border: solid;
+	color: rgba(195, 184, 184, 0.74);
+	/*background-color: rgba(0, 0, 0, 0.74);*/
+}
+
+#erikPic img {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.h1Text {
+	font-size: 30px;
+	color: white;
+}
+
+.pText {
+	font-size: 20px;
+	color: white;
+	text-align: left;
+}
+
+.skills {
+	float: right;
+	width: 50%;
+	height: 100%;
+	margin-top: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+.skills h1, p {
+	color: white;
+	text-align: center;
+}
+
+.bar {
+	height: 24px;
+	width: 100%;
+	background-color: grey;
+}
+
+#bar1 {
+	display: block;
+	background-color: white;
+	width: 90%;
+	height: 100%;
+	text-align: center;
+}
+#bar2 {
+	display: block;
+	background-color: white;
+	width: 60%;
+	height: 100%;
+	text-align: center;
+}
+#bar3 {
+	display: block;
+	background-color: white;
+	width: 30%;
+	height: 100%;
+	text-align: center;
+}
+#bar4 {
+	display: block;
+	background-color: white;
+	width: 10%;
+	height: 100%;
+	text-align: center;
+}
+
+#andreasPic img {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#andreasBar1 {
+	display: block;
+	background-color: white;
+	width: 90%;
+	height: 100%;
+	text-align: center;
+}
+#andreasBar2 {
+	display: block;
+	background-color: white;
+	width: 60%;
+	height: 100%;
+	text-align: center;
+}
+#andreasBar3 {
+	display: block;
+	background-color: white;
+	width: 30%;
+	height: 100%;
+	text-align: center;
+}
+#andreasBar4 {
+	display: block;
+	background-color: white;
+	width: 10%;
+	height: 100%;
+	text-align: center;
+}
+
+#axelPic img {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#axelBar1 {
+	display: block;
+	background-color: white;
+	width: 90%;
+	height: 100%;
+	text-align: center;
+}
+#axelBar2 {
+	display: block;
+	background-color: white;
+	width: 60%;
+	height: 100%;
+	text-align: center;
+}
+#axelBar3 {
+	display: block;
+	background-color: white;
+	width: 30%;
+	height: 100%;
+	text-align: center;
+}
+#axelBar4 {
+	display: block;
+	background-color: white;
+	width: 10%;
+	height: 100%;
+	text-align: center;
 }

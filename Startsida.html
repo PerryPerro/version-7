@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="Startsidastyle.css">
 		<title>Startsida</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 
 
@@ -12,12 +13,23 @@
 
 		<div id="header">
 			<ul>
+
+			<a id="homeLink" href="#">
+				<li>Home</li>
+			</a>
+			<a href="#presentation">
 				<li>Presentationssida</li>
+			</a>
+
 				<a href="presentation.html">
 					<li>Personlig sida</li>
 				</a>
+				<a href="#portfolioSida">
 				<li>Portfoliosida</li>
+				</a>
+				<a href="#kontaktSida">
 				<li>Kontaktsida</li>
+				</a>
 			</ul>
 		</div>
 		
@@ -26,7 +38,7 @@
 		</div>
 
 		<div id="presentation">
-			<h1>ajwdhkjuawnhfkjuahwfjh</h1>
+			<h1 class="rubrik">Presentation</h1>
 			<p>There are many variations of passages of Lorem Ipsum available, 
 				but the majority have suffered alteration in some form, by injected humour, 
 				or randomised words which don't look even slightly believable. If you are going 
@@ -37,20 +49,58 @@
 				handful of model sentence structures, to generate Lorem Ipsum which looks 
 				reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
 				injected humour, or non-characteristic words etc.</p>
+				<div id="splash">
+					<img src="bildspel1.jpg" id="img" width="100%" height="100%">
+				</div>
+				<button id="stopKnapp">Stop</button>
+				<button id="animeKnapp">Dölj</button>
+				<div id="animeDiv">
+					<img id="animeBild" src="sjo.jpg" width="100%" height="100%">
+				</div>
 		</div>
 
 		<div class="bild2">
 		</div>
 
-		<div id="portfolioSida">	
+		<div id="portfolioSida">
+		<h1 class="rubrik">Portfolio</h1>
+			<p>There are many variations of passages of Lorem Ipsum available, 
+				but the majority have suffered alteration in some form, by injected humour, 
+				or randomised words which don't look even slightly believable. If you are going 
+				to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing 
+				hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to 
+				repeat predefined chunks as necessary, making this the first true generator on 
+				the Internet. It uses a dictionary of over 200 Latin words, combined with a 
+				handful of model sentence structures, to generate Lorem Ipsum which looks 
+				reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+				injected humour, or non-characteristic words etc.</p>	
 		</div>
 
 		<div class="bild3">
 		</div>
 
 		<div id="kontaktSida">
+		<h1 class="rubrik">Kontakt</h1>
+			<p>There are many variations of passages of Lorem Ipsum available, 
+				but the majority have suffered alteration in some form, by injected humour, 
+				or randomised words which don't look even slightly believable. If you are going 
+				to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing 
+				hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to 
+				repeat predefined chunks as necessary, making this the first true generator on 
+				the Internet. It uses a dictionary of over 200 Latin words, combined with a 
+				handful of model sentence structures, to generate Lorem Ipsum which looks 
+				reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+				injected humour, or non-characteristic words etc.</p>
+			<form action="/action_page.php">
+			Förnamn: <input type="text" name="fNamn"><br>
+			Efternamn: <input type="text" name="eNamn"><br>
+			Mail: <input type="text" name="mail"><br>
+			Meddelande: <textarea name="message"></textarea><br>
+			<input type="submit" value="Skicka">
+			</form>
 		</div>
-
+	
+	<script type="text/javascript" src="script.js"></script>
 	</body>
 
 </html>
